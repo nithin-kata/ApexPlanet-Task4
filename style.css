@@ -1,0 +1,45 @@
+/* Reset */
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height:1.6; background:#f0f2f5; color:#333;}
+
+/* Header */
+header {background:#1f2937; color:#fff; padding:1rem 2rem; display:flex; justify-content:space-between; align-items:center; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+header h1 {font-size:1.8rem; letter-spacing:1px;}
+header nav button {
+  background:#3b82f6; color:#fff; border:none; margin-left:0.5rem; padding:0.5rem 1rem; border-radius:5px; cursor:pointer;
+  transition:0.3s;
+}
+header nav button:hover {background:#2563eb;}
+
+/* Main Sections */
+main {padding:2rem; max-width:1200px; margin:0 auto;}
+.tab-section {display:none; animation:fadeIn 0.5s;}
+.tab-section.active {display:block;}
+
+/* Portfolio */
+.hero {text-align:center; padding:3rem 2rem; background:#3b82f6; color:#fff; border-radius:10px; margin-bottom:2rem;}
+.hero h3 {font-size:2rem; margin-bottom:1rem;}
+.projects, .contact {margin-bottom:2rem; background:#fff; padding:1.5rem; border-radius:10px; box-shadow:0 4px 6px rgba(0,0,0,0.1);}
+.projects ul {list-style:disc; margin-left:1.5rem;}
+
+/* To-Do */
+#taskInput {padding:0.7rem; width:70%; border-radius:5px; border:1px solid #ccc; margin-right:0.5rem;}
+#addBtn {padding:0.7rem 1rem; border:none; background:#10b981; color:#fff; border-radius:5px; cursor:pointer; transition:0.3s;}
+#addBtn:hover {background:#059669;}
+#taskList li {padding:0.7rem; list-style:none; background:#fff; margin:0.5rem 0; border-radius:5px; cursor:pointer; box-shadow:0 2px 4px rgba(0,0,0,0.1); transition:0.2s;}
+#taskList li:hover {background:#d1fae5; text-decoration:line-through;}
+
+/* Products */
+.filters {margin-bottom:1rem; display:flex; gap:1rem; flex-wrap:wrap;}
+.filters label {margin-right:0.3rem;}
+#productContainer {display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1rem;}
+.product {padding:1rem; background:#fff; border-radius:10px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:0.3s;}
+.product:hover {transform:translateY(-5px); box-shadow:0 8px 16px rgba(0,0,0,0.2);}
+.product h3 {color:#3b82f6; margin-bottom:0.5rem;}
+.product p {margin-bottom:0.3rem;}
+
+/* Footer */
+footer {text-align:center; padding:1rem; background:#1f2937; color:#fff; margin-top:2rem; border-top:2px solid #3b82f6;}
+
+/* Animations */
+@keyframes fadeIn {from{opacity:0;} to{opacity:1;}}
