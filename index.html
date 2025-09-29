@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nithin Kata Projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>NITHIN KATA</h1>
+  <nav>
+    <button class="tab-btn" data-target="portfolio">Portfolio</button>
+    <button class="tab-btn" data-target="todo">To-Do List</button>
+    <button class="tab-btn" data-target="products">Products</button>
+  </nav>
+</header>
+
+<main>
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="tab-section active">
+    <h2>Portfolio</h2>
+    <div class="hero">
+      <h3>Welcome to my Portfolio</h3>
+      <p>Engineering Student | Aspiring Developer</p>
+    </div>
+    <div class="projects">
+      <h3>Projects:</h3>
+      <ul>
+        <li>Personal Portfolio Website</li>
+        <li>SheShield App</li>
+        <li>Face Recognition Attendance System</li>
+        <li>Web Calculator</li>
+        <li>Chicken Crossy Game</li>
+      </ul>
+    </div>
+    <div class="contact">
+      <h3>Contact Me:</h3>
+      <p>Email: nithinkata29@gmail.com</p>
+      <p>Phone: 9550290832</p>
+    </div>
+  </section>
+
+  <!-- To-Do Section -->
+  <section id="todo" class="tab-section">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task...">
+    <button id="addBtn">Add</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="tab-section">
+    <h2>Product Listing</h2>
+    <div class="filters">
+      <label>Category:</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+      </select>
+
+      <label>Sort By:</label>
+      <select id="sortFilter">
+        <option value="default">Default</option>
+        <option value="priceLow">Price: Low to High</option>
+        <option value="priceHigh">Price: High to Low</option>
+      </select>
+    </div>
+    <div id="productContainer"></div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Nithin Kata</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
